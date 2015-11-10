@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_ventas"
+    android:visibility="invisible">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ventas Del Día"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/lbl_nombreventas"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nombreventas"
+        android:layout_below="@+id/lbl_nombreventas"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_numchips"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/txt_nombreventas"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_numplanes"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_numporta"
+        android:layout_below="@+id/txt_numplanes"
+        android:layout_alignLeft="@+id/txt_numequiposnuevos"
+        android:layout_alignStart="@+id/txt_numequiposnuevos"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txt_numequiposnuevos"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/txt_numporta"
+        android:layout_toRightOf="@+id/btnmenos_planes"
+        android:layout_toEndOf="@+id/btnmenos_planes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnmenos_chips"
+        android:layout_alignBottom="@+id/txt_numchips"
+        android:layout_toLeftOf="@+id/txt_numchips"
+        android:layout_alignLeft="@+id/txt_nombreventas"
+        android:layout_alignStart="@+id/txt_nombreventas"
+        android:layout_alignTop="@+id/txt_numchips" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnmas_chips"
+        android:layout_alignTop="@+id/txt_numchips"
+        android:layout_toRightOf="@+id/txt_numchips"
+        android:layout_alignRight="@+id/txt_nombreventas"
+        android:layout_alignEnd="@+id/txt_nombreventas"
+        android:layout_alignBottom="@+id/txt_numchips" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnmenos_planes"
+        android:layout_above="@+id/txt_numporta"
+        android:layout_toLeftOf="@+id/txt_numplanes"
+        android:layout_alignLeft="@+id/btnmenos_chips"
+        android:layout_alignStart="@+id/btnmenos_chips"
+        android:layout_alignTop="@+id/txt_numplanes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnmenos_portas"
+        android:layout_toLeftOf="@+id/txt_numporta"
+        android:layout_alignLeft="@+id/btnmenos_planes"
+        android:layout_alignStart="@+id/btnmenos_planes"
+        android:layout_alignBottom="@+id/txt_numporta"
+        android:layout_alignTop="@+id/txt_numporta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/btnmenos_equipos"
+        android:layout_alignLeft="@+id/btnmenos_portas"
+        android:layout_alignStart="@+id/btnmenos_portas"
+        android:layout_alignTop="@+id/txt_numequiposnuevos"
+        android:layout_alignBottom="@+id/txt_numequiposnuevos"
+        android:layout_toLeftOf="@+id/txt_numequiposnuevos"
+        android:layout_toStartOf="@+id/txt_numequiposnuevos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnmas_planes"
+        android:layout_alignBottom="@+id/txt_numplanes"
+        android:layout_toRightOf="@+id/txt_numplanes"
+        android:layout_alignRight="@+id/btnmas_chips"
+        android:layout_alignEnd="@+id/btnmas_chips"
+        android:layout_alignTop="@+id/txt_numplanes" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnmas_portas"
+        android:layout_above="@+id/txt_numequiposnuevos"
+        android:layout_alignRight="@+id/btnmas_planes"
+        android:layout_alignEnd="@+id/btnmas_planes"
+        android:layout_alignTop="@+id/txt_numporta"
+        android:layout_toRightOf="@+id/txt_numporta"
+        android:layout_toEndOf="@+id/txt_numporta" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnmas_equipos"
+        android:layout_alignTop="@+id/txt_numequiposnuevos"
+        android:layout_alignRight="@+id/btnmas_portas"
+        android:layout_alignEnd="@+id/btnmas_portas"
+        android:layout_alignBottom="@+id/txt_numequiposnuevos"
+        android:layout_alignLeft="@+id/btnmas_portas"
+        android:layout_alignStart="@+id/btnmas_portas" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/btn_agregarventa"
+        android:layout_below="@+id/txt_numequiposnuevos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_chips"
+        android:layout_alignBottom="@+id/btnmenos_chips"
+        android:layout_toLeftOf="@+id/btnmenos_chips"
+        android:layout_alignTop="@+id/btnmenos_chips"
+        android:src="@android:drawable/ic_menu_share"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_planes"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/img_chips"
+        android:layout_alignEnd="@+id/img_chips"
+        android:src="@android:drawable/ic_menu_share"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_porta"
+        android:layout_alignBottom="@+id/btnmenos_portas"
+        android:layout_alignRight="@+id/img_planes"
+        android:layout_alignEnd="@+id/img_planes"
+        android:src="@android:drawable/ic_menu_share"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_equipos"
+        android:layout_above="@+id/btn_agregarventa"
+        android:layout_alignRight="@+id/img_porta"
+        android:layout_alignEnd="@+id/img_porta"
+        android:src="@android:drawable/ic_menu_share"/>
+</RelativeLayout>

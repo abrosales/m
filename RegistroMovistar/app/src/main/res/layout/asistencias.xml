@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:visibility="invisible"
+    android:id="@+id/activity_asistencias">>
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Por Favor Verifique Sus Datos"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="right|top"
+            android:layout_x="60dp"
+            android:layout_y="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:id="@+id/lbl_nombre"
+        android:layout_x="36dp"
+        android:layout_y="78dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/lbl_fecha"
+        android:layout_x="25dp"
+        android:layout_y="115dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/lbl_nombre"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hoa entrada"
+        android:id="@+id/lbl_horaentrada"
+        android:layout_x="23dp"
+        android:layout_y="155dp"
+        android:layout_below="@+id/lbl_fecha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora salida"
+        android:id="@+id/lbl_horasalida"
+        android:layout_x="16dp"
+        android:layout_y="201dp"
+        android:layout_below="@+id/txt_horaentrada"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Localización"
+        android:id="@+id/lbl_localizacion"
+        android:layout_x="25dp"
+        android:layout_y="263dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txt_horasalida"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nombre"
+        android:layout_below="@+id/lbl_nombre"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_fecha"
+        android:layout_below="@+id/lbl_fecha"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_horaentrada"
+        android:layout_below="@+id/lbl_horaentrada"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_horasalida"
+        android:layout_below="@+id/lbl_horasalida"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_localizacion"
+        android:layout_below="@+id/lbl_localizacion"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/lbl_horaentrada"
+        android:layout_toRightOf="@+id/txt_horaentrada"
+        android:layout_alignBottom="@+id/txt_horaentrada"
+        android:layout_alignRight="@+id/txt_localizacion"
+        android:layout_alignEnd="@+id/txt_localizacion" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_alignTop="@+id/txt_horasalida"
+        android:layout_alignBottom="@+id/txt_horasalida"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_toRightOf="@+id/txt_horasalida"
+        android:layout_toEndOf="@+id/txt_horasalida" />
+
+</RelativeLayout>

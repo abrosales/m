@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/Control_asistencia" android:icon="@android:drawable/ic_menu_camera"
+            android:title="Asistencia" />
+        <item android:id="@+id/Notificaciones" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Notificaciones" />
+        <item android:id="@+id/Ventas" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Ventas" />
+        <item android:id="@+id/Estadistica" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Estadistica" />
+    </group>
+
+    <item android:title="Opciones">
+        <menu>
+            <item android:id="@+id/Salir" android:icon="@android:drawable/ic_menu_share"
+                android:title="Salir" />
+
+        </menu>
+    </item>
+
+</menu>
