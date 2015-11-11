@@ -5,4 +5,10 @@
     android:id="@+id/activity_notificaciones"
     android:visibility="invisible">
 
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webViewnotifi"
+        android:layout_gravity="center_horizontal"
+        />
 </LinearLayout>

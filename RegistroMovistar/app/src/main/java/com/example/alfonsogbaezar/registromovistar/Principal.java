@@ -19,6 +19,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +43,7 @@ public class Principal extends AppCompatActivity
     TextView menosplanes;
     TextView menosportas;
     TextView menosequipos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +62,30 @@ public class Principal extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         super.setTitle("Asistencia");
         asit.setVisibility(View.VISIBLE);
+         WebView estadisticasview= (WebView) this.findViewById(R.id.webViewestadist);
+        WebView notificacionesview= (WebView) this.findViewById(R.id.webViewnotifi);
+         estadisticasview.loadUrl("http://facebook.com");
+        notificacionesview.loadUrl("http://facebook.com");
+        estadisticasview.setWebViewClient(new WebViewClient()
+        {
+            // evita que los enlaces se abran fuera nuestra app en el navegador de android
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url)
+            {
+                return false;
+            }
+
+        });
+        estadisticasview.setWebViewClient(new WebViewClient()
+        {
+            // evita que los enlaces se abran fuera nuestra app en el navegador de android
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url)
+            {
+                return false;
+            }
+
+        });
         comenzarLocalizacion();
 
     }
